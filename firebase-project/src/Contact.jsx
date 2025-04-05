@@ -5,13 +5,14 @@ const Contact = () => {
     FirstName: "" ,         //cuz its object so we leave it alone
     LastName: "" ,
     Phone: "" ,
-    addresss: "" ,
+    address: "" ,
     email: "" ,
     message: "" ,
   });
 
   //without this we wont be abe to write anything
   let name,value;
+
   const postUserData = (event) => {
 name = event.target.name;
 value = event.target.value;
@@ -21,10 +22,10 @@ setUserData({ ...userData, [name]: value});
 //connect with firebase
   const submitData = async (event) => {
 event.preventDefault();
-const { FirstName, LastName , Phone , addresss , email, message } = userData;
+const { FirstName, LastName , Phone , address , email, message } = userData;
 
 //so we don't save empty file
-if( FirstName && LastName && Phone && addresss && email && message){
+if( FirstName && LastName && Phone && address && email && message){
 // ------------------
 
 
@@ -40,7 +41,7 @@ const res = fetch(
       FirstName,
        LastName ,
         Phone ,
-        addresss ,
+        address ,
          email,
          message,
     }),
@@ -53,7 +54,7 @@ if (res){
      FirstName,
     LastName ,
      Phone ,
-     addresss ,
+     address ,
       email,
       message,
     });
@@ -119,7 +120,7 @@ if (res){
                       </div>
                       <div className="col-12 col-lg-6 contact-input-feild">
                         <input
-                          typ
+                        type="text"
                           name="Phone"
                           id=""
                           className="form-control"
@@ -143,15 +144,19 @@ if (res){
 
                     <div className="row">
                       <div className="col-12 contact-input-feild">
-                        <input
-                         type="text"
-                          name=" addresss"
-                           id=""
-                           className="form-control"
-                            placeholder="Add Address"
-                            value={userData.addresss}
-                            onChange={postUserData}
-                             />
+                      <input
+  type="text"
+  name="address"
+  className="form-control"
+  placeholder="Add Address"
+  value={userData.address}
+  onChange={postUserData}
+  style={{
+    zIndex: 100,
+    position: "relative",
+    backgroundColor: "white"
+  }}
+/>
                       </div>
                     </div>
                      <div className="row">

@@ -97,18 +97,18 @@ box-shadow: 0 0.2rem 0.5rem rgb(111, 48, 153);
 /* ---------------------------------------------- */
 /* -----------------HEADER SECTION STARTS------------- */
 header{
-  background-color: var(--bgcolor);  
+  background-color: var(--bgcolor);
    min-height: 100vh;
    width: 100%;
 }
 .main-hero-container{
     height: 80vh;
     display: flex;
-    
+
 }
 
 .main-hero-container h1{
-    text-transform: capitalize;  
+    text-transform: capitalize;
     font-weight: bolder;
 }
 
@@ -180,7 +180,7 @@ margin-top: 10rem;
     left:65%;
     top:-7%;
     box-shadow:0.8rem 0  0.8rem rgba(0,0,0,0.25);
-} 
+}
 
 /* -------------------Header Section End---------- */
 
@@ -330,7 +330,7 @@ margin: 2rem 0;
   margin:auto;
     }
 }
-    
+
 @media (min-width:992px){
     .service-container .col-lg-4 {
         flex:0 0 auto;
@@ -452,10 +452,10 @@ footer .fontclass-style:hover{
 
 
 @media (min-width:1500px) {
-    .container, 
-    .container-lg, 
-    .container-md, 
-    .container-sm, 
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
     .container-xl,
     .container-xxl{
 max-width: 1500px !important;
@@ -463,10 +463,10 @@ max-width: 1500px !important;
 }
 
 @media (min-width:1400px){
-    .container, 
-    .container-lg, 
-    .container-md, 
-    .container-sm, 
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
     .container-xl,
     .container-xxl{
 max-width: 1400px;
@@ -476,9 +476,9 @@ max-width: 1400px;
 /*------------------RESPONSIVE PHONE--------------
                     ----------------------------------------*/
 
-                    @media (max-width:990px) {
+                    @media (max-width: 768px) {
                         header {
-                          
+
                             min-height: 130vh;
                         }
 
@@ -491,42 +491,42 @@ max-width: 1400px;
                             background-color: #fff;
                             padding: 2rem 1rem;
                         }
-                        
+
                         .input-group .btn-style{
                             font-size: 1.2rem;
                         }
-                        
+
                         /* -------main hero container style----- */
-                        
+
                         .main .main-hero-container h1{
         font-size: 2.5rem;
     }
-    
+
     .main-hero-para{
         font-size: 1.5rem;
         padding-right: 1rem;
         width: 100%;
     }
-    
+
     .main-hero-container .header-left-side{
         padding-left: 4rem;
         margin-top: 5rem;
     }
-    
+
     .main-herosection-images{
         position: relative;
         height: 35rem;
         left: 0px;
         top:0px;
     }
-    
+
     .header-right-side img{
         width: 60%;
         height: 100%;
         margin-top: 0rem;
-        
+
     }
-    
+
     .header-right-side .main-hero-img2{
         position: absolute;
         width: 30%;
@@ -536,26 +536,26 @@ max-width: 1400px;
         box-shadow: 0.8px 0rem 0.8rem rgb(0 0 0 / 25%);
         visibility: hidden;
     }
-    
+
     .input-group .input-group-button{
         right: 26%;
         width: 30%;
-        
+
     }
-    
-    .work-container {    
-   
+
+    .work-container {
+
         width: 80vw;
         padding: 5rem 1rem;
     }
-    
+
     .work-container .main-heading {
     font-size: 2.7rem;
     font-weight: bolder;
     margin-bottom: 3rem;
     word-spacing: 0rem;
     }
-    
+
     .work-container-subdiv {
          padding:0 0rem;
 
@@ -565,14 +565,14 @@ max-width: 1400px;
     .our-services-list {
         margin-top: 4rem;
          padding-left: 3rem;
-    
+
         }
-        
+
         .our-services-rightside-img{
         text-align: center;
         }
-        
-        
+
+
 
      .our-services img {
         width: 70%;
@@ -593,22 +593,38 @@ max-width: 1400px;
 
         .our-services-rightside-content{
 padding-left: 3rem;
-        } 
+        }
 
         /* Footer =======*/
-        .contactus-section{
-margin: 5rem 0;
-        }
-        .contact-rightside{
-            margin-top: 5rem;
-        }
+        .contactus-section {
+            margin: 5rem 1rem;
+          }
 
-        .contact-rightside form .main-hero-para{
-            font-size: 1.3rem;
-            color: var(--text-color);
-            margin: 0;
-            font-weight: lighter;
-            width: 98%;
-            padding: 0px 1rem;
-        }
+          .contact-leftside img {
+            min-width: 100%;
+            max-height: 40rem;
+          }
+
+  .contact-input-feild {
+    margin-bottom: 2rem;
   }
+
+  .contact-rightside form .form-control {
+    font-size: 2.2rem;
+    height: auto;
+  }
+
+  .form-checkbox-style {
+    margin: 2rem 0;
+  }
+
+  .contact-rightside form .main-hero-para {
+    width: 100%;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .contact-rightside {
+    position: relative;
+    z-index: 1000;
+  }
+}

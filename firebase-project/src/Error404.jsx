@@ -15,3 +15,7 @@ const Error404 = () => {
 };
 
 export default Error404;
+
+/*
+Project Console: https://console.firebase.google.com/project/fir-contact-5f56e/overviewHosting URL: https://fir-contact-5f56e.web.app
+*/
